@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  background-color: rgb(235, 226, 247);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  gap: 5em;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  background: var(--clr-text, blue);
+  color: var(--clr-accent, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  border-radius: 0.3em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  color: #004B69;
+  margin-bottom: 5rem;
+}
+
+.hero {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 15em 0;
+  background: #6b6d70;
+  background-image: url(../img/land.png);
+  background-size: 50%;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.featured {
+  background: #eee;
+}
+
+.featured-item {
+  display: block;
+  position: relative;
+  transform: scale(.85);
+  transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.featured-item:hover, .featured-item:focus {
+  transform: scale(1);
+}
+
+.featured-details {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.price {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.featured-item:hover .featured-details, .featured-item:focus .featured-details {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
+} 
+
+.product {
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.hero {
+  --clr-accent: #f7f2e9;
+}
+
+.minecraft {
+  --clr-inner: #47fa00;
+  --clr-outer: #7db46c;
+  --clr-accent: #ffffff;
+}
+
+.gta5 {
+  --clr-inner: #fce4b3;
+  --clr-outer: #9b9488;
+  --clr-accent: #ffffff;
+}
+
+.nba {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #ffffff;
+}
+
+
