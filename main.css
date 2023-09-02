@@ -84,7 +84,7 @@ section {
   color: rgb(255, 255, 255);
   padding: 15em 0;
   background: #6b6d70;
-  background-image: url(../img/land.png);
+  background-image: url(img/land.png);
   background-size: 50%;
   background-position: center center;
   background-blend-mode: multiply;
